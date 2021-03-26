@@ -28,15 +28,23 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+        .forEach and .map both iterate over a given array while leaving the initial array unaffected.  The main difference is that .map will produce an entirely new array.  .map is also chainable, meaning that you are able to attatch another method to it.  Sometimes this won't work for forEach.
 
 2. Explain the difference between a callback and a higher order function.
+        A Higher Order Function gets passed another function as an argument.  Callbacks  are the ones being passed to a Higher Order Function as the argument.
 
 3. What is closure?
+        closure is when a function reaches outside of its own scope to retrieve a variable.
 
 4. Describe the four rules of the 'this' keyword.
+        When discussing 'this' we are referencing different types of Binding.  The four types are Window Binding, Implicit Binding, Explicit Binding, and New Binding.  
+            Window = anything declared in the global scope will bind to the window explicitly told otherwise.
+            Implicit = implicit binding occurs naturally within objects or other sets of curly braces.  It's due to block level scope.
+            Explicit = this is when we use .call, .apply,  or .bind to explicitly tell the browser what 'this' will be referring to. 
+            New = new deals with constructor functions and prototypes.  When we use 'new' in these instances it will create an entirely new object and 'this' will refer to that new object.
 
 5. Why do we need super() in an extended class?
-
+        super() is taking the place of Object.create.  without it, our extended class has no way of recieving it's parent parameters.  
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions

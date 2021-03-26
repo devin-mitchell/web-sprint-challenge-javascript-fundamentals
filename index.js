@@ -16,10 +16,10 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
+/*an analogy that helped me with this was thinking about 'one way glass'.  Imagine one way glass between 'nestedFunction' and everything else outside its scope.  nestedFunction can see out of that glass but everything else is unable to see in.  nestedFunction has its own blocked scope that others can't reach but it is nested in myFunction's scope so therefore has access to its variables.
 
 
-
-
+*/
 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
 /* Use summation to do the following:
@@ -28,10 +28,14 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(number) {
+  let counter = 0;
+  for(let i = 0; i <= number; i++){
+    counter += i
   }
+  return counter;
+  }
+  console.log('task 2----------------------------->', summation(5))
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
