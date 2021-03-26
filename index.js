@@ -98,8 +98,7 @@ const zooAnimals = [
   */
 
   function USApop(data){
-   const popTotal =  data.reduce((acc, item) => {return acc += item.population}, 0);
-   return popTotal;
+    return data.reduce((acc, item) => {return acc += item.population}, 0);
   }
   // console.log('task 3.4----------------------->', USApop(zooAnimals));
   
